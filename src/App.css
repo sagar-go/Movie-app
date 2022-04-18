@@ -1,0 +1,526 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+.container {
+  display: flex;
+  overflow-x: scroll;
+  height: 56vh;
+  gap: 1%;
+  margin-top: 2%;
+  background-color: black;
+}
+.container img {
+  height: 88%;
+}
+
+.active {
+  background-color: crimson;
+  color: white;
+}
+.container2 {
+  display: flex;
+  height: 55vh;
+  margin-top: 6%;
+  gap: 5%;
+  flex-wrap: wrap;
+  padding: 0% 5%;
+  cursor: pointer;
+}
+
+.theme {
+  padding-bottom: 10%;
+}
+.srcicon {
+  width: 50%;
+  /* border: 2px solid; */
+  /* height: 9vh; */
+  display: flex;
+  /* margin-left: 25%; */
+  /* align-items: center; */
+  justify-content: end;
+}
+.container2 img {
+  height: 88%;
+  margin-bottom: -1%;
+}
+
+footer {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+.link {
+  text-decoration: none;
+}
+input {
+  height: 5vh;
+  width: 70%;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding-left: 1%;
+}
+
+.title {
+  font-family: "Open Sans", sans-serif;
+  padding-left: 5%;
+  padding-bottom: 2%;
+  font-size: 1.6rem;
+  color: black;
+}
+
+.head {
+  margin-top: 1%;
+}
+.head2 {
+  margin-top: 2%;
+  height: 30vh;
+  padding-bottom: 10%;
+}
+.random {
+  height: 70vh;
+  position: relative;
+  width: 100%;
+  position: relative;
+  aspect-ratio: 16/9;
+  background-color: rgb(21, 21, 21);
+}
+.random img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.random2 {
+  width: 30%;
+  position: absolute;
+  left: 5%;
+  top: 20%;
+  font-weight: 900;
+}
+.no-image {
+  width: 100% !important;
+  padding-left: 50%;
+}
+.movie {
+  height: 55vh;
+  text-align: center;
+  /* margin-bottom: 12%; */
+  background: rgb(21, 21, 21);
+  margin-top: -7%;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  font-size: 30px;
+}
+
+.slick-prev {
+  left: 1% !important;
+  z-index: 1;
+  font-size: 30px;
+}
+.slick-next {
+  right: 1% !important;
+  z-index: 1;
+}
+
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+  font-size: 30px;
+}
+
+.slick-prev:before {
+  content: "←";
+  font-size: 30px;
+}
+
+.slick-next:before {
+  content: "←";
+}
+
+.movie button {
+  width: 71%;
+  padding: 10px;
+  font-size: 1rem;
+  background: #2e2a2a;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: 0.5s ease-in-out;
+  outline: none;
+}
+.slick-slide img {
+  display: block;
+  height: 49vh;
+  cursor: pointer;
+  margin-left: 15%;
+  /* margin-right: 26%; */
+  width: 70%;
+  object-fit: contain;
+  position: relative;
+}
+
+.container button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  background: black;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border: 1px solid red;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.container2 button {
+  width: 72%;
+  padding: 10px;
+  font-size: 1rem;
+  background: black;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.container2 button:hover {
+  background-color: crimson;
+  color: white;
+}
+.movie button:hover {
+  box-shadow: inset 250px 0 0 0 crimson;
+  transition: 0.5s ease-in-out;
+}
+
+.heart {
+  padding-top: 1%;
+}
+
+.movie button:hover .heart {
+  color: red;
+  transition: 0.5s ease-in-out;
+}
+.qq {
+  display: none;
+}
+
+.nothing {
+  text-align: center;
+  margin-top: 15%;
+  color: black;
+}
+.random2 h4,
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  color: black;
+  color: snow;
+  border-bottom: 2px solid snow;
+  width: 99%;
+  padding-bottom: 2%;
+  font-weight: 600;
+}
+
+.movie2 {
+  height: 48vh;
+  margin-top: 3%;
+}
+
+.random2 p {
+  margin-top: 4%;
+  font-size: 1.1rem;
+  font-weight: 600;
+
+  color: snow;
+}
+
+nav ul {
+  height: 10vh;
+  padding-left: 5.3%;
+  padding-right: 5.1%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: black;
+}
+
+.srcicon22 {
+  position: absolute;
+  right: 6%;
+  color: black;
+  top: 3.5%;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.left {
+  width: 50%;
+  width: 50%;
+  height: 10vh;
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+  align-items: center;
+  gap: 10%;
+}
+
+/* @media screen and (max-width:700px){
+  .qq{
+    display: block;
+    border: 2px solid green;
+  }
+  .link2{
+    border: 2px solid red;
+  }
+
+nav h2 {
+  position: absolute;
+ left: 90%;
+ top:3%
+}
+
+} */
+.con3 {
+  display: flex;
+  height: 55vh;
+  margin-top: 1%;
+  gap: 5%;
+  flex-wrap: wrap;
+  padding: 0% 5%;
+  cursor: pointer;
+  margin-left: 6%;
+}
+.con3aa {
+  height: 48vh;
+  margin-top: 3%;
+}
+.con3aa img {
+  height: 88%;
+  margin-bottom: -2%;
+}
+.con3aa button {
+  width: 81%;
+  padding: 10px;
+  font-size: 1rem;
+  background: black;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.con3aa button:hover {
+  background-color: crimson;
+  color: white;
+}
+.filbuttons {
+  width: 76%;
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 11%;
+  flex-wrap: wrap;
+}
+
+.filbuttons button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1%;
+  width: 18%;
+  font-size: 1rem;
+  border-radius: 12px;
+  height: 7vh;
+  margin-top: 5%;
+}
+.player {
+  background-color: transparent;
+  position: absolute;
+  width: 55%;
+  height: 54%;
+  top: 0%;
+}
+.buttonplayer1 {
+  width: 30%;
+  padding: 1%;
+  font-size: 1.1rem;
+  align-items: center;
+  outline: none;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  left: 18%;
+  height: 8%;
+  margin-bottom: 0.5%;
+  transition: background-color 0.4s ease-in-out;
+  display: flex;
+  justify-content: center;
+}
+.buttonplayer2 {
+  margin-top: 8%;
+  width: 23%;
+  padding: 2%;
+  font-size: 1.1rem;
+  outline: none;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 11px;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out;
+}
+.buttonplayer2:hover,
+.buttonplayer1:hover {
+  background-color: white;
+  color: black;
+}
+
+@media screen and (min-width: 350px) and (max-width: 500px) {
+  .movie button {
+    width: 62%;
+  }
+
+  li {
+    font-size: 1rem;
+  }
+  nav ul {
+    height: 10vh;
+    padding-left: 5%;
+    padding-right: 0;
+  }
+  .srcicon {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+  }
+  input {
+    height: 4vh;
+    width: 80%;
+  }
+  .srcicon22 {
+    right: 0%;
+    font-size: 1.5rem;
+    top: 3.5%;
+  }
+  .random {
+    height: 70vh;
+    position: relative;
+  }
+
+  .random img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    margin-bottom: 15%;
+  }
+
+  .random2 {
+    width: 90%;
+    position: absolute;
+    top: 85%;
+  }
+  .random2 p {
+    display: none;
+    font-weight: 600;
+  }
+
+  .random2 h4,
+  .random2 h1 {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 5%;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .buttonplayer2 {
+    display: none;
+  }
+
+  .container2 {
+    display: flex;
+    height: 55vh;
+    margin-top: 6%;
+    gap: 5%;
+    flex-wrap: wrap;
+    cursor: pointer;
+    justify-content: center;
+  }
+
+  .container2 button {
+    width: 100%;
+    background-color: crimson;
+  }
+  .movie2 {
+    height: 48vh;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+  }
+  .filbuttons {
+    width: 80%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15%;
+  }
+
+  .filbuttons button {
+    width: 80%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15%;
+    justify-content: center;
+    align-items: center;
+  }
+  .filbuttons button:hover {
+    background-color: crimson;
+  }
+
+  .con3 {
+    margin-top: 30%;
+    gap: 5%;
+    justify-content: center;
+  }
+  .con3aa button {
+    width: 80%;
+  }
+
+  .random2 h4,
+  h1 {
+    border: none;
+  }
+}
